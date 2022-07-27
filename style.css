@@ -10,17 +10,20 @@ position: fixed;
     border-bottom: none;
    z-index: 3;
 }
+ .full-packages{
+ transition: 3s;
+} 
 
-.full-packages{
+.full-packages:hover{
 
-  
-    position: absolute;
+  color: white;
     z-index: 1;
    
-   height: 500px;
- 
-    top: -25px;
-} 
+  transition-timing-function:linear ; 
+ top: -25px;
+
+    background-color: rgb(33, 33, 176);
+}
 
 @media screen ,(min-width:577px) and (max-width:768px) {
     .toast-gift{

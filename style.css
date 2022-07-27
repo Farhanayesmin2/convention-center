@@ -1,20 +1,51 @@
 .toast-gift{
+    
     top: 550px;
     right: 0;
-    position: fixed;
+position: fixed;
     width: 250px;
-    border: 5px solid blue;
-
+    border: 5px solid rgb(0, 183, 255);
     border-top: none;
+    border-right: none;
     border-bottom: none;
-     border-right: none;     
-    
+   z-index: 3;
 }
 
+.full-packages{
 
+  
+    position: absolute;
+    z-index: 1;
+   
+   height: 500px;
+ 
+    top: -25px;
+} 
 
-
-
+@media screen ,(min-width:577px) and (max-width:768px) {
+    .toast-gift{
+       
+       z-index: 2;
+    }
+    .full-packages{
+        row-gap: 25px;
+    }
+    } 
+@media screen ,(min-width:768px) and (max-width:992px) {
+    .toast-gift{
+       
+       z-index: 2;
+    }
+    .full-packages{
+        row-gap: 25px;
+    } 
+}
+@media screen and (min-width:576px) {
+    .toast-gift{  z-index: 2;   }
+    .full-packages{
+     margin-top: 25px;
+    } 
+} 
 
 
 
